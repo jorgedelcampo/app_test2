@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width, height=device-height">
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<!--<script type="text/javascript" src="js/jquery/jquery.mobile-1.4.5.min.js"></script>-->
+
+<link rel="icon" type="image/png" href="../img/ojo.png">
+<title>Editar oferta</title>
+</head>
+
+<body>
+
+    <p id="rut">15479585-5</p>
+    
+    <p id="response"></p>
+    
+    <script type="text/javascript">
+	var rut = document.getElementById('rut');
+	var datosOferta = { 'rut_usuario': rut }
+	$.post('https://www.arcos.cl/app_test2/test.php', datosOferta, procesarDatos);			
+	//return false;
+					
+	function procesarDatos(data) {
+		getElementById('response').innerHTML = data;
+		}
+	</script>
+
+</body>
+</html>

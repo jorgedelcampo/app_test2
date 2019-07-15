@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width, height=device-height">
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<title>Inicio</title>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+    
+    	<div class="header">
+        <p>Ingresa los datos de tu oferta</p>
+        </div>
+    
+    	<div id="main_section">
+        
+        <form name="edit_oferta" id="edit_oferta">
+        <input type="text" name="titulo_oferta" id="titulo_oferta" placeholder="Título oferta">
+        <select name="tipo_oferta" id="tipo_oferta">
+        	<option selected disabled>Tipo</option>
+        	<option value="practica">Práctica</option>
+            <option value="laboral">Laboral</option>
+            <option value="reemplazo">Reemplazo</option>
+		</select>
+        <input type="date" id="fecha_inicio" placeholder="Fecha de inicio">
+        <input type="date" id="fecha_termino" placeholder="Fecha de término">
+        <textarea type="text" name="descripcion" placeholder="Descripción" rows="6" id="descripcion"></textarea>
+        <input type="text" name="requisitos" placeholder="Requisitos" id="requisitos">
+        <input type="text" name="sueldo" placeholder="Sueldo" id="sueldo">
+        <select name="escuela" id="lista_escuelas">
+        	<option selected disabled>Selecciona una Escuela</option>
+            <option value="foto">Fotografía</option>
+            <option value="cine">Cine y Audiovisual</option>
+            <option value="diseno">Diseño y Multimedia</option>
+            <option value="actu">Actuación</option>
+            <option value="sonido">Sonido y Música</option>
+            <option value="territorio">Territorio y Sustentabilidad</option> 
+		</select>
+        <input type="submit" value="Crear" id="crear">
+        <input type="reset" value="Cancelar" onClick="window.location.href = 'index.html';" id="cancelar">
+        </form>
+        
+    
+    </div>   
+    
+    </div>
+
+<script type="text/javascript" src="js/fastclick.js"></script>
+<script type="text/javascript" src="js/hammer.min.js"></script>
+<script type="text/javascript" src="js/gestos.js"></script>
+
+
+<!--<script>
+function finOferta(){
+	var fechaTermino = document.getElementById('fecha_termino');
+	var tipoOferta = document.getElementById('tipo_oferta').value;
+	if (tipoOferta == 'practica' || tipoOferta == 'reemplazo') {
+		fechaTermino.style.display = 'block';
+	}
+	else {
+		fechaTermino.style.display = 'none';
+		}
+	}
+</script>-->
+
+</body>
+</html>

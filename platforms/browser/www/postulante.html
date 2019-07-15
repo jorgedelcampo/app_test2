@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width, height=device-height">
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<title>Inicio</title>
+</head>
+
+<body class="postulante">
+
+    <div class="container" id="container">
+    
+    	<div class="header">
+        <p>Datos del postulante</p>
+        </div>
+    
+    	<div id="main_section">
+        
+        <div>        
+        
+        <!--<h2>Título oferta</h2>-->
+        
+        <div class="section_postulante">
+        
+        <p>Nombre: Jorge del Campo</p>
+        <div class="datos_postulante">
+            <div>Carrera<br>
+            <span id="nom_carrera">Técnico Superior en Comunicación Digital</span></div>
+            <div class="fecha_postulacion">
+            Fecha postulación<br>
+            <span id="fecha_postulacion">05/05/2019</span>
+            </div>
+        </div>
+        <div class="respuesta">
+        	<p>Respuesta
+            </p>
+        </div>
+        <input id="portafolio" type="button" value="Ver portafolio" />
+        
+        </div>
+        
+        <div class="contacto_postulante">
+        <input id="contactar" type="button" value="Contactar" />
+        <input type="reset" value="Volver" onClick="window.history.back()" />
+        </div>
+        
+    
+    </div>
+            
+            
+	</div>
+    
+    <div id="menu_more" class="menu_more">
+    
+    	<div class="header">
+        <h3>Ponte en contacto con Jorge</h3>
+        </div>
+        
+        <div>
+        
+            <form name="index" id="index">
+                <form>
+                <textarea id="texto_mensaje" rows="10" placeholder="Escribir mensaje"></textarea>
+				<div class="contacto_postulante"><input type="submit" id="enviar_mensaje" value="Enviar">
+                <input type="reset" id="cancelar" value="Volver">
+                </div>
+                </form>
+            </form>
+            
+		</div>
+    
+    </div>
+    
+
+<script type="text/javascript" src="js/fastclick.js"></script>
+<script type="text/javascript" src="js/hammer.min.js"></script>
+<script type="text/javascript" src="js/gestos.js"></script>
+
+</body>
+</html>
